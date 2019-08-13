@@ -1,0 +1,233 @@
+@font-face {
+    font-family: QuicksandRegular;
+    src: url("../../resources/font/Quicksand-regular.ttf");
+}
+
+@font-face {
+    font-family: QuicksandBold;
+    src: url("../../resources/font/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: QuicksandLight;
+    src: url("../../resources/font/Quicksand-Light.ttf");
+}
+
+html {
+    width: 100vw !important;
+    height: 100vh !important;
+    font-family: QuicksandLight;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        overflow: scroll !important;
+    }
+}
+
+body {
+    color: white !important;
+    background-image: url("../../resources/img/noise.png");
+    background-repeat: repeat;
+}
+
+.buttonStyled {
+    text-align: center;
+    background-color: transparent;
+    border-color: white;
+    border: solid 1.3px white;
+    color: white;
+    border-radius: 10px;
+    font-family: QuicksandLight !important;
+    line-height: 48px;
+}
+
+.buttonStyled:active,
+.buttonStyled:visited,
+.buttonStyled:link,
+.buttonStyled:focus,
+.buttonStyled:default,
+.buttonStyled:visited {
+    background-color: transparent !important;
+}
+
+.buttonStyled:hover {
+    cursor: pointer;
+    background-color: transparent !important;
+}
+
+form a:hover {
+    color: rgb(228, 228, 228);
+}
+
+form .button {
+    background-color: transparent;
+    border-color: white;
+    border: solid 1.3px white;
+    color: white;
+    border-radius: 200px;
+    padding: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: 25px;
+    font-family: QuicksandLight !important;
+}
+
+.circle-invert i {
+    font-size: 35px;
+    color: #383838;
+    background-color: white;
+    border: solid 1px white;
+    border-radius: 90px;
+    padding: 10px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+}
+
+.sidenav {
+    background-color: #383838;
+    color: white !important;
+}
+
+.sidenav .user-view h5 {
+    margin-top: 0 !important;
+}
+
+.sidenav a,
+.sidenav li,
+.sidenav i {
+    color: white !important;
+}
+
+.sidenav li {
+    margin-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.sidenav li i {
+    margin-right: 10px !important
+}
+
+.sidenav li a {
+    border-bottom: solid 1px white;
+}
+
+.sidenav li.buttonStyled {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.sidenav li.buttonStyled.full {
+    border-radius: 200px;
+}
+
+.sidenav li.buttonStyled i {
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+
+.sidenav li.buttonStyled a {
+    border-bottom: none 0px white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.sidenav li.buttonStyled.full a {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sidenav-trigger {
+    color: #383838c9;
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.sidenav-trigger i {
+    background-color: white;
+    font-size: 45px;
+    padding: 3px;
+    border: solid 1px transparent;
+    border-radius: 900px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.384);
+}
+
+.search {
+    background-color: white;
+    padding: 5px;
+    color: #383838c9;
+    margin-right: 5vw;
+    margin-top: 5.5vh;
+    float: right;
+    border: solid 1px transparent;
+    border-radius: 900px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.384);
+    width: 16em;
+}
+
+.search .input-field {
+    margin: 0px;
+}
+
+.search .prefix {
+    margin-left: 5px;
+    color: #383838b0 !important;
+    line-height: 0.8;
+}
+
+.search input.valid:not([type]),
+.search input.valid:not([type]):focus,
+.search input.valid[type=text]:not(.browser-default),
+.search input.valid[type=text]:not(.browser-default):focus,
+.search input.valid[type=search]:not(.browser-default),
+.search input.valid[type=search]:not(.browser-default):focus,
+.search textarea.materialize-textarea.valid,
+.search textarea.materialize-textarea.valid:focus,
+.search .select-wrapper.valid>input.select-dropdown {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.search input:focus,
+.search input:visited {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.search #icon_prefix {
+    font-family: QuicksandRegular !important;
+    color: #383838 !important;
+    border: none;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    height: 2.5rem;
+}
+
+#map {
+    z-index: -5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.over .btn-large {
+    color: #383838b0;
+    border-radius: 99px;
+}
+
+.over .btn-large p {
+    display: inline;
+    margin: 0;
+}
+
+
+/* Darker background on mouse-over */
