@@ -27,8 +27,8 @@
                 </div>
             </div>
             <div class="form col s12 m4 offset-m4">
-                <form action="" method="POST">
-                    <input type="text" name="usuário" placeholder="USUÁRIO" autocomplete="off">
+                <form action="../assets/php/action.php" method="POST">
+                    <input type="text" name="usuario" placeholder="USUÁRIO" autocomplete="off">
                     <input type="password" name="senha" placeholder="SENHA" autocomplete="off">
                     <br>
                     <br>
@@ -44,7 +44,7 @@
             <div class="center-align">
                 <div class="col s8">
                     <a href="https://feajr.com/#" target="_blank"><img class="responsive-img" src="../resources/img/Logo-FEA-ju-nior-USP--Todo-Branco-.png" width="90vw" class="logofea"></a>
-                    <a href="https://ejcomp.com.br" target="_blank"><img class="responsive-img" src="../resources/img/ejcomp.png" width="90vw"  class="logoejcompo"></a>
+                    <a href="https://ejcomp.com.br" target="_blank"><img class="responsive-img" src="../resources/img/ejcomp.png" width="90vw" class="logoejcompo"></a>
                     <br>
                     <p>Desenvolvido por EJComp - Empresa Júnior da Computação<br>2019</p>
                 </div>

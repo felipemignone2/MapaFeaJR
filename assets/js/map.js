@@ -5,8 +5,8 @@ $(document).ready(function() {
 
 //OPEN
 
-var map;
-var geocoder;
+var map, heatmap, geocoder, test;
+var markers;
 
 function geocodeAddress(geocoder, address) {
     geocoder.geocode({ 'address': address }, function(results, status) {
@@ -17,7 +17,6 @@ function geocodeAddress(geocoder, address) {
                 map: map,
                 position: results[0].geometry.location
             });
-
 
             marker.addListener('click', function() {
                 map.panTo(marker.getPosition());
@@ -37,13 +36,38 @@ function initMap() {
         mapTypeControl: false,
         fullscreenControl: false,
         zoomControlOptions: {
-            position: google.maps.ControlPosition.LEFT_BOTTOM
+            position: google.maps.ControlPosition.LEFT_CENTER
         },
         zoom: 7
     });
 
     geocoder = new google.maps.Geocoder();
 
-    geocodeAddress(geocoder, `Rua Atílio Piffer, 745
-    Casa Verde – SP`);
+    geocodeAddress(geocoder, `Grupo Promex - São Paulo
+    Rua Atílio Piffer, 745 - Casa Verde
+    São Paulo - SP
+    02516-000
+    Brasil`);
+
+    heatmap = new google.maps.visualization.HeatmapLayer({
+        data: getPoints(),
+        radius: 20,
+        map: map
+    });
 }
+
+function getPoints() {
+    return [
+        new google.maps.LatLng(-23.5077364, -46.6593997),
+        new google.maps.LatLng(-23.5077364, -46.65944),
+        new google.maps.LatLng(-23.507736, -46.659400)
+    ]
+}
+
+function toggleHeatmap() {
+    heatmap.setMap(heatmap.getMap() ? null : map);
+}
+
+$(".fixed-action-btn").click(function() {
+    toggleHeatmap();
+})

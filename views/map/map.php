@@ -34,7 +34,7 @@
             <li class="buttonStyled"><a href="#!"><i class="material-icons">storage</i>BANCO DE DADOS</a></li>
             <br>
             <br>
-            <li class="buttonStyled full"><a href="#!"><i class="material-icons">keyboard_return</i>DESCONECTAR</a></li>
+            <li class="buttonStyled full"><a href="../login.php"><i class="material-icons">keyboard_return</i>DESCONECTAR</a></li>
             <br>
             <br>
             <div class="centerfy" align="center">
@@ -42,6 +42,9 @@
                 <a href="https://ejcomp.com.br" target="_blank"><img class="responsive-img" src="../../resources/img/ejcomp.png" width="80vw" class="logoejcompo"></a>
                 <br>
                 <p>Desenvolvido por EJComp - Empresa Júnior da Computação<br>2019</p>
+                <br>
+                <br>
+                <br>
             </div>
         </ul>
 
@@ -54,9 +57,9 @@
         </div>
 
         <div class="fixed-action-btn">
-            <a class="btn-large white">
+            <a class="btn-large white waves-effect waves-light">
                 <i class="material-icons">blur_on</i>
-                <p>ALTERNAR MAPA</p>
+                <p>ALTERNAR MAPA DE CALOR</p>
             </a>
         </div>
 
@@ -68,7 +71,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSo3IpJobBUT_Uut-48xZ1Y1jnXTX4FiI&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSo3IpJobBUT_Uut-48xZ1Y1jnXTX4FiI&callback=initMap&libraries=visualization" async defer></script>
     <script src="../../assets/js/map.js"></script>
 </body>
 
