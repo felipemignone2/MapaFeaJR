@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if(!$_SESSION["user"]){
+        header("Location: ../../views/login.php?ERROR_MESSAGE=Você não pode realizar esta operação); 
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 
@@ -34,7 +41,7 @@
             <li class="buttonStyled"><a href="#!"><i class="material-icons">storage</i>BANCO DE DADOS</a></li>
             <br>
             <br>
-            <li class="buttonStyled full"><a href="../login.php"><i class="material-icons">keyboard_return</i>DESCONECTAR</a></li>
+            <li class="buttonStyled full"><a href="../../assets/php/desconectar_action.php"><i class="material-icons">keyboard_return</i>DESCONECTAR</a></li>
             <br>
             <br>
             <div class="centerfy" align="center">

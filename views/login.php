@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -11,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
 
     <div class="container centerfy" align="center">
@@ -28,6 +25,9 @@
             </div>
             <div class="form col s12 m4 offset-m4">
                 <form action="../assets/php/action.php" method="POST">
+                    <?php if(isset($_GET['ERROR_MESSAGE'])) { 
+                        echo "<div class='error-message'>".$_GET['ERROR_MESSAGE']."</div>";
+                    } ?>
                     <input type="text" name="usuario" placeholder="USUÁRIO" autocomplete="off">
                     <input type="password" name="senha" placeholder="SENHA" autocomplete="off">
                     <br>
