@@ -167,3 +167,12 @@ footer img {
 .modal-content .container {
     margin: 5vw 5vh;
 }
+
+.error-message{
+    background-color: red;
+    color: white;
+    font-size: 14pt;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.6);
+}
